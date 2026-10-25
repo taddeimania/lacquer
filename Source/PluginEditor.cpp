@@ -278,14 +278,9 @@ void LacquerPanel::paint (juce::Graphics& g)
 {
     g.fillAll (colours::panel);
 
-    // Mounting slots and the name, as on the other panels. The five dots are
-    // the stage colours.
-    drawScrewSlot (g, { 50.0f, 37.0f });
-    drawScrewSlot (g, { (float) designW - 50.0f, 37.0f });
-    drawText (g, "LACQUER", { 100.0f, 14.0f, 200.0f, 46.0f }, 38.0f, colours::brand, true, juce::Justification::centredLeft);
-    for (int s = 0; s < NumStages; ++s)
-        drawLed (g, { 292.0f + (float) s * 14.0f, 46.0f }, 4.5f, colours::stage (s), true);
-    drawText (g, "mastering assistant", { 370.0f, 22.0f, 170.0f, 34.0f }, 17.0f, colours::ink, true,
+    // The name.
+    drawText (g, "LACQUER", { 24.0f, 14.0f, 200.0f, 46.0f }, 38.0f, colours::brand, true, juce::Justification::centredLeft);
+    drawText (g, "mastering assistant", { 188.0f, 22.0f, 170.0f, 34.0f }, 17.0f, colours::ink, true,
               juce::Justification::centredLeft);
 
     drawSection (g, kStyleBox, "STYLE");
