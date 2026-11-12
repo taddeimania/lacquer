@@ -4,6 +4,10 @@ the song. One MASTER knob sets how much EQ, compression, saturation and
 width goes on, and the limiter lands the loudness on the target. Put it last
 on the master channel.
 
+## New in 0.1.2
+
+- The macOS build is signed and notarised by Apple, so your DAW loads it straight away, with no quarantine command first.
+
 ## Install
 
 Unzip and copy `Lacquer.vst3` into your VST3 folder (macOS
