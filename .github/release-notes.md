@@ -11,5 +11,5 @@ Unzip and copy `Lacquer.vst3` into your VST3 folder (macOS
 Linux `~/.vst3`), then rescan plug-ins in Live. The guide (PDF) in the
 download explains mastering from the start and walks you through a session.
 
-**macOS:** the plugin isn't notarised. If macOS refuses to load it, run
-`xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/VST3/Lacquer.vst3`.
+**macOS:** the plugin is signed and notarised by Apple, so your DAW loads it
+straight away.
